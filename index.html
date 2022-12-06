@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container wrapper directions">
+        <h1>Find the Rainbow!</h1>
+        <h3>OH NO!</h3>
+        <p>The rainbow has lost it's colour and needs your help! Learn the order of the rainbow to give the rainbow it's colour again!
+        </p>
+    </div>
+    <button type="button" onclick="showGame()">Start!</button>
+    <div class="message"></div>
+
+    <div class="container wrapper" id="showGame" style="display:none">
+
+        <div class="game">
+            <input type="image" class="action" src="imgs/ROYGBIVPaintBrushes.png" alt="Paint Brush Outline" id="image5" width="300" height="300"
+            onclick="redBrush(), playRed()">
+            <audio id="red" src="sounds/red.mp3"></audio>
+
+            <input type="image" class="action" src="imgs/ROYGBIVPaintBrushes.png" alt="Paint Brush Outline" id="image4" width="300" height="300"
+            onclick="orangeBrush(), playOrange()">
+            <audio id="orange" src="sounds/orange.mp3"></audio>
+
+            <input type="image" class="action" src="imgs/ROYGBIVPaintBrushes.png" alt="Paint Brush Outline" id="image7" width="300" height="300"
+            onclick="yellowBrush(), playYellow()">
+            <audio id="yellow" src="sounds/yellow.mp3"></audio>
+
+            <input type="image" class="action" src="imgs/ROYGBIVPaintBrushes.png" alt="Paint Brush Outline" id="image2" width="300" height="300"
+            onclick="greenBrush(), playGreen()">
+            <audio id="green" src="sounds/green.mp3"></audio>
+
+            <input type="image" class="action" src="imgs/ROYGBIVPaintBrushes.png" alt="Paint Brush Outline" id="image1" width="300" height="300"
+            onclick="blueBrush(), playBlue()">
+            <audio id="blue" src="sounds/blue.mp3"></audio>
+
+            <input type="image" class="action" src="imgs/ROYGBIVPaintBrushes.png" alt="Paint Brush Outline" id="image3" width="300" height="300"
+            onclick="indigoBrush(), playIndigo()">
+            <audio id="indigo" src="sounds/indigo.mp3"></audio>
+
+            <input type="image" class="action" src="imgs/ROYGBIVPaintBrushes.png" alt="Paint Brush Outline" id="image6" width="300" height="300"
+            onclick="violetBrush(), playViolet()">
+            <audio id="violet" src="sounds/violet.mp3"></audio>
+        </div>
+        <div class="container wrapper">
+            <div class="popup" onclick="myFunction(), playRainbow()"> <button>Found them all?</button>
+                <audio id="rainbow" src="sounds/rainbow.mp3"></audio>
+                <div class="popuptext" id="myPopup">
+                    <h2>W I N N E R!!!!<br>
+                        <img src="imgs/Rainbow.png" alt="Rainbow">
+                        <br>You found me!
+                    </h2>
+                    <p>Thank you for learning the order of the rainbow and helping me!</p> <h3>Remember ROYGBIV!</h3>
+                </div>
+            </div>
+        </div>
+        <button type="button" onclick="gameReset()">Play Again?</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
