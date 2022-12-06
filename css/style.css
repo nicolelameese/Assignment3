@@ -43,7 +43,7 @@ button {
 
 .action:hover {
     border-radius: 100%;
-    box-shadow: inset 0px 0px 0px 3px rgb(219, 204, 255);;
+    box-shadow: inset 0px 0px 0px 3px rgb(219, 204, 255);
     box-sizing: border-box;
 }
 
@@ -55,7 +55,7 @@ button {
 #reset-button {
     margin: 15px auto 0;
     width: 370px;
-  }
+}
 
 
 /* Popup container */
